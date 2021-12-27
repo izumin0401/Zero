@@ -1,0 +1,9 @@
+require zero.lang;
+
+class Hoge {
+}
+
+class Piyo {
+}
+
+Piyo p = new Hoge();
