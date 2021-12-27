@@ -1,0 +1,9 @@
+Exception occured. nullを参照しています。
+	at sub(nullpointer.ze:13)
+	at sub(nullpointer.ze:15)
+	at sub(nullpointer.ze:15)
+	at sub(nullpointer.ze:15)
+	at sub(nullpointer.ze:15)
+	at sub(nullpointer.ze:15)
+Exception occured. nullを参照しています。
+	at top level(nullpointer.ze:24)
