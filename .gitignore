@@ -1,0 +1,7 @@
+*.o
+compiler/lex.yy.c
+compiler/y.tab.c
+compiler/y.tab.h
+compiler/y.output
+compiler/zero
+compiler/zero.exe
