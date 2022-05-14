@@ -25,13 +25,19 @@ INCLUDES = \
   -I/usr/local/include\
   -I../include
 
+ifeq ($(OS),Windows_NT)
+LIBFLAGS = -lm -lmsvcp60
+else
+LIBFLAGS = 
+endif
+
 $(TARGET):$(OBJS)
 	cd ./builtin; $(MAKE);
 	cd ../zvm; $(MAKE);
 	cd ../share; $(MAKE);
 	cd ../memory; $(MAKE);
 	cd ../debug; $(MAKE);
-	$(CC) $(OBJS) -o $@ -lm -lmsvcp60
+	$(CC) $(OBJS) -o $@ $(LIBFLAGS)
 
 clean:
 	rm -f *.o lex.yy.c y.tab.c y.tab.h *~

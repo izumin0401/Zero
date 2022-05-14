@@ -2,6 +2,8 @@
 #include <stdio.h>
 #include "zeroc.h"
 #define YYDEBUG 1
+int yylex();
+void yyerror(const char *s);
 %}
 %union {
     char                *identifier;
